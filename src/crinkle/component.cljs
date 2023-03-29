@@ -2,7 +2,7 @@
   (:require-macros crinkle.component)
   (:require [react :as react]
             [goog.object :as gobj])
-   (:import goog.functions.UNDEFINED)
+   (:import goog.functions.UNDEFINED))
 
 ;; INTERNAL USE ONLY! These are aliases for macroexpansion to target
 ;; If crinkle.component macros expanded to react/createElement directly, then
