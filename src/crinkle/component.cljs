@@ -144,7 +144,7 @@
       ;; deps; or to do this.
       (do (react/useEffect goog.functions.UNDEFINED) oldv)
       (do (react/useEffect #(do (set! (.-current vref) value)
-                                (crinkle.component/js-undefined)))
+                                js/undefined))
           value))))
 
 (defn use=
@@ -154,7 +154,7 @@
     (if (= value (.-current vref))
       (do (react/useEffect goog.functions.UNDEFINED) (.-current vref))
       (do (react/useEffect #(do (set! (.-current vref) value)
-                                (crinkle.component/js-undefined)))
+                                js/undefined))
           value))))
 
 ;; Two ways we could improve these:
